@@ -97,7 +97,8 @@ Screenshot:
 
 #### Email Column Cleaning and Standardization
 
-##### Removing Extra Spaces and Special Character Errors: The Email column contained several formatting issues, including unnecessary spaces, repeated symbols, and inconsistent letter casing. To resolve these issues, a nested formula combining SUBSTITUTE() and LOWER() functions was applied.
+##### Removing Extra Spaces and Special Character Errors 
+The Email column contained several formatting issues, including unnecessary spaces, repeated symbols, and inconsistent letter casing. To resolve these issues, a nested formula combining SUBSTITUTE() and LOWER() functions was applied.
 
 The innermost SUBSTITUTE() function removed any extra spaces within the email address.
 
@@ -111,7 +112,8 @@ This approach standardized the structure and improved the overall quality of the
 Screenshot:
 ![Email Cleaning](Cleaning/Screenshots/Email/fixing_extra_spaces,@@,..,uppercase_in_email.jpg)
 
-##### Correcting Domain Formatting Issues: Some email addresses had incorrect or incomplete domain formats. These were corrected using FIND() and REPLACE() functions:
+##### Correcting Domain Formatting Issues 
+Some email addresses had incorrect or incomplete domain formats. These were corrected using FIND() and REPLACE() functions:
 
 Replaced "emailcom" with "email.com".
 
@@ -127,7 +129,8 @@ Screenshot:
 Screenshot:
 ![Fixing "@.com"](Cleaning/Screenshots/Email/fixing_@.com.jpg)
 
-##### Fixing Missing “.com” Extensions: Certain email entries ended with a period (.), indicating that the "com" extension was missing. To correct this, the following formula was used:
+##### Fixing Missing “.com” Extensions 
+Certain email entries ended with a period (.), indicating that the "com" extension was missing. To correct this, the following formula was used:
 
 IF(RIGHT(C2,1)=".", C2&"com", C2)
 
@@ -141,7 +144,8 @@ If false, it leaves the original value unchanged.
 Screenshot:
 ![Fixing Missing "com"](Cleaning/Screenshots/Email/ends_with_._fixed.jpg)
 
-##### Handling Missing Email Values: Some records contained blank email fields. To fixl this, the following formula was applied:
+##### Handling Missing Email Values 
+Some records contained blank email fields. To fix this, the following formula was applied:
 
 IF(C2="", "No_Email_Provided", C2)
 
@@ -159,11 +163,13 @@ Screenshot:
 
 #### Country Column Cleaning
 
-##### Standardizing Country Name Casing: The Country column contained inconsistent capitalization. To standardize the full country names, the PROPER() function was applied to ensure that each word begins with a capital letter.
+##### Standardizing Country Name Casing 
+The Country column contained inconsistent capitalization. To standardize the full country names, the PROPER() function was applied to ensure that each word begins with a capital letter.
 Screenshot:
 ![Fixing casing issues](Cleaning/Screenshots/Country/fixing_case_issues_in_country.jpg)
 
-##### Correcting Abbreviated Country Names: After applying the proper case formatting, some abbreviated country names were unintentionally altered (e.g., USA became Usa, and U.S.A became U.s.a). Since only a small number of records were affected, these entries were filtered and manually corrected to restore their accurate uppercase format (e.g., USA, UK).
+##### Correcting Abbreviated Country Names 
+After applying the proper case formatting, some abbreviated country names were unintentionally altered (e.g., USA became Usa, and U.S.A became U.s.a). Since only a small number of records were affected, these entries were filtered and manually corrected to restore their accurate uppercase format (e.g., USA, UK).
 
 **Before Cleaning**
 Screenshot:
@@ -173,7 +179,8 @@ Screenshot:
 Screenshot:
 ![After Correction](Cleaning/Screenshots/Country/short_country_name_issues_fixed.jpg)
 
-##### Handling Missing Country Values: Replaced blank country values with "Unknown" using Find & Replace.
+##### Handling Missing Country Values 
+Replaced blank country values with "Unknown" using Find & Replace.
 Screenshot:
 ![Handling Missing Country](Cleaning/Screenshots/Country/missing_country_names_fixed.jpg)
 
@@ -181,7 +188,7 @@ Screenshot:
 
 #### Last_Purchase_Date and Total_Spent Columns Cleaning
 
-##### Date Column Standardization and Correction: 
+##### Date Column Standardization and Correction 
 The Date column contained inconsistent date formats and one incorrectly entered value that was entered as 15-02-2024 instead of 02-15-2024 (MM-DD-YYYY format).Five dates were in a different text-based format: 5-MAR-24.The column had mixed date formats, which could affect sorting and analysis.
 
 The entire Date column data type was converted to the standard MM-DD-YYYY format to ensure consistency.
@@ -206,7 +213,8 @@ Screenshot:
 Screenshot:
 ![After Cleaning](Cleaning/Screenshots/Date/date_issue_fixed.jpg)
 
-##### Standardizing Currency Values and Replacing Invalid Data from Total_Spent: Removed $ symbols from Total Spent values, Converting invalid entries such as: N/A,NULL,#VALUE to blank values by using the formula shown in the formula bar of the screenshot below.
+##### Standardizing Currency Values and Replacing Invalid Data from Total_Spent 
+Removed $ symbols from Total Spent values, Converting invalid entries such as: N/A,NULL,#VALUE to blank values by using the formula shown in the formula bar of the screenshot below.
 Screenshot:
 ![Standardizing_Currency_Values_and_Replacing_Invalid_Data](Cleaning/Screenshots/Spent/total_spent_issue 1_fix.jpg)
 
@@ -221,7 +229,8 @@ If any error happens => returns ""
 
 #####  Handling Missing Values
 
-###### Flagging Missing Last_Purchase_Date: Created a Data_Issue_Flag column that flags missing values in Last_Purchase_Date as "Missing_Purchase_Date" using formula =IF(AND(G2>0,E2=""),"Missing_Purchase_Date","OK")
+###### Flagging Missing Last_Purchase_Date 
+Created a Data_Issue_Flag column that flags missing values in Last_Purchase_Date as "Missing_Purchase_Date" using formula =IF(AND(G2>0,E2=""),"Missing_Purchase_Date","OK")
 
 This formula checks two conditions at the same time using AND
 
@@ -239,7 +248,8 @@ If FALSE => returns "OK"
 Screenshot:
 ![Flagging_Missing_Dates](Cleaning/Screenshots/Date/date_missing _fixed.jpg)
 
-###### Flagging Missing Total_Spent: Created a Data_Quality_Flag column that flags missing values in Total_Spent as "Missing_Total_Spent" using formula =IF(AND(E2<>"",TRIM(G2)=""),"Missing_Total_Spent","OK")
+###### Flagging Missing Total_Spent 
+Created a Data_Quality_Flag column that flags missing values in Total_Spent as "Missing_Total_Spent" using formula =IF(AND(E2<>"",TRIM(G2)=""),"Missing_Total_Spent","OK")
 
 E2<>"" => Checks if cell E2 is NOT empty.
 
@@ -255,7 +265,8 @@ Screenshot:
 
 ---
 
-## Cleaned Dataset Description: After completing the data cleaning process in Excel, the Clean Data set consists of 175 tows including header.The dataset is now standardized, consistent, and analysis-ready.The following improvements were achieved:
+## Cleaned Dataset Description 
+After completing the data cleaning process in Excel, the Clean Data set consists of 175 tows including header.The dataset is now standardized, consistent, and analysis-ready.The following improvements were achieved:
 
 - Removed extra spaces and standardized casing in the Customer_Name.
 - Cleaned and validated Email entries by fixing formatting errors, removing invalid characters, and handling missing values.
@@ -270,7 +281,8 @@ Additionally, two new columns were created to improve data quality monitoring:
 
 The cleaned dataset is structured, validated, and ready for further analysis, reporting, or visualization.
 
-### Note: The four customers with no purchases were flagged as missing in cleaned data set due to N/A, NULL and #VALUE Total Spent entries in the raw dataset. 
+### Note 
+The four customers with no purchases were flagged as missing in cleaned data set due to N/A, NULL and #VALUE Total Spent entries in the raw dataset. 
 
 **Clean Data from row 1 to 43**
 Screenshot:
@@ -282,7 +294,8 @@ Screenshot
 
 ---
 
-## Analysis: After cleaning, the dataset was analyzed to answer the following business questions
+## Analysis 
+After cleaning, the dataset was analyzed to answer the following business questions
 
 ### What is the total number of unique customers?
 
