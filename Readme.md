@@ -75,24 +75,23 @@ Screenshot:
 Removed 3 blank rows using Filter.
 
 **Before Removing Blank Rows**
-
 Screenshot:
 ![Blank_Removal](Cleaning/Screenshots/blank/fixing_blank_rows.jpg)
 
 **After Removing Blank Rows**
-
 Screenshot:
 ![Blank_Removal](Cleaning/Screenshots/blank/fixed_blank_rows.jpg)
 
 ---
 
-#### Standardizing Customer_Name: Fixed inconsistent text casing and removed extra leading spaces in the Customer_Name column using Excel functions.
+#### Standardizing Customer_Name 
+Fixed inconsistent text casing and removed extra leading spaces in the Customer_Name column using Excel functions.
 
 Used TRIM() to eliminate unnecessary leading and trailing spaces.
 
 Applied PROPER() to standardize text formatting by capitalizing the first letter of each word in customer names.
 Screenshot:
-![Standardizing Text](Cleaning/Screenshots/Customer_Name/fixing_case _issue _and _extra _spaces _in _cust-name.jpg)
+![Standardizing Text](Cleaning/Screenshots/Customer_Name/fixing_case_issue_and_extra_spaces_in_cust-name.jpg)
 
 ---
 
