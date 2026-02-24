@@ -59,6 +59,7 @@ Screenshot:
 **Raw Data from row 50 to 80**
 
 Screenshot:
+
 ![50_to_80_Raw](Data/Raw/raw_2.jpg)
 
 ---
@@ -78,10 +79,12 @@ Screenshot:
 Removed 3 blank rows using Filter.
 
 **Before Removing Blank Rows**
+
 Screenshot:
 ![Blank_Removal](Cleaning/Screenshots/blank/fixing_blank_rows.jpg)
 
 **After Removing Blank Rows**
+
 Screenshot:
 ![Blank_Removal](Cleaning/Screenshots/blank/fixed_blank_rows.jpg)
 
