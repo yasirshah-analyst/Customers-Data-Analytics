@@ -94,6 +94,7 @@ Fixed inconsistent text casing and removed extra leading spaces in the Customer_
 Used TRIM() to eliminate unnecessary leading and trailing spaces.
 
 Applied PROPER() to standardize text formatting by capitalizing the first letter of each word in customer names.
+
 Screenshot:
 ![Standardizing Text](Cleaning/Screenshots/Customer_Name/fixing_case_issue_and_extra_spaces_in_cust-name.jpg)
 
@@ -113,6 +114,7 @@ The outermost SUBSTITUTE() corrected duplicate dots (..) by replacing them with 
 Finally, the LOWER() function converted the entire cleaned email address to lowercase to ensure consistent formatting across the dataset.
 
 This approach standardized the structure and improved the overall quality of the email data.
+
 Screenshot:
 ![Email Cleaning](Cleaning/Screenshots/Email/fixing_extra_spaces,@@,..,uppercase_in_email.jpg)
 
