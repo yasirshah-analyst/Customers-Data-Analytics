@@ -19,10 +19,12 @@ This project is a customer analytics project that includes data cleaning, purcha
 - Excel Formulas & Functions
 - Tables
 - Charts
-- Data Formatting    
+- Data Formatting
+
+---
 
 ## Dataset Information
-- Source: The data set used in this project was generated using DeepSeek AI(a generative artificial intelligence platform)  for portfolio purpose. All data is synthetic and does not represent real individuals.
+- **Source:** The data set used in this project was generated using DeepSeek AI(a generative artificial intelligence platform)  for portfolio purpose. All data is synthetic and does not represent real individuals.
 - The raw data set has 183 rows including header row, duplicates rows and blank rows and the following six columns
 Customer_ID
 
@@ -55,6 +57,7 @@ Screenshot:
 ![1_to_49_Raw](Data/Raw/raw_1.jpg)
 
 **Raw Data from row 50 to 80**
+
 Screenshot:
 ![50_to_80_Raw](Data/Raw/raw_2.jpg)
 
