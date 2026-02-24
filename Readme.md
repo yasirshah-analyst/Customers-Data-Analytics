@@ -13,12 +13,12 @@
 ---
 
 ## Tools Used
--Excel
--Excel Ribbon Tools
--Excel Formulas & Functions
--Tables
--Charts
--Data Formatting    
+- Excel
+- Excel Ribbon Tools
+- Excel Formulas & Functions
+- Tables
+- Charts
+- Data Formatting    
 
 ## Dataset Information
 - Source: The data set used in this project was generated using DeepSeek AI(a generative artificial intelligence platform)  for portfolio purpose.All data is synthetic and does not represent real individuals.
