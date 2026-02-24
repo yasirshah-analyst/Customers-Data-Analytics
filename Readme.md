@@ -1,6 +1,7 @@
 # Customer Data Cleaning and Purchase Analysis Dashboard
 
-## Project Overview: This project is a customer analytics project that includes data cleaning, purchase analysis, and dashboard visualization using Excel.The goal is to analyze customer purchase behavior and extract meaningful insights.
+## Project Overview 
+This project is a customer analytics project that includes data cleaning, purchase analysis, and dashboard visualization using Excel. The goal is to analyze customer purchase behavior and extract meaningful insights.
 
 ---
 
@@ -21,10 +22,8 @@
 - Data Formatting    
 
 ## Dataset Information
-- Source: The data set used in this project was generated using DeepSeek AI(a generative artificial intelligence platform)  for portfolio purpose.All data is synthetic and does not represent real individuals.
-
-The raw data set has 183 rows including header row, duplicates rows and blank rows and the following six columns
-
+- Source: The data set used in this project was generated using DeepSeek AI(a generative artificial intelligence platform)  for portfolio purpose. All data is synthetic and does not represent real individuals.
+- The raw data set has 183 rows including header row, duplicates rows and blank rows and the following six columns
 Customer_ID
 
 Customer_Name
@@ -43,12 +42,13 @@ Total_Spent($)
 ## Privacy Notice
 - Due to privacy considerations,the complete Excel dataset is not publicly shared. Selected sample screenshots from raw dataset and supporting table are provided to demonstrate the cleaning and analysis workflow
 
-## Data Cleaning: This project focuses on cleaning and preparing raw data set using Excel.The raw dataset contained several inconsistencies and missing values, including:
--Extra spaces and inconsistent casing in Customer_Name
--Formatting errors, invalid characters, and missing values in Email
--Capitalization inconsistencies, issues in abbreviated names, and missing entries in Country
--Mixed formats, incorrect entry, and missing values in Date
--Currency symbols in some values, invalid text values (N/A, NULL, Error), and missing data in Total_Spent
+## Data Cleaning 
+This project focuses on cleaning and preparing raw data set using Excel.The raw dataset contained several inconsistencies and missing values, including:
+- Extra spaces and inconsistent casing in Customer_Name
+- Formatting errors, invalid characters, and missing values in Email
+- Capitalization inconsistencies, issues in abbreviated names, and missing entries in Country
+- Mixed formats, incorrect entry, and missing values in Date
+- Currency symbols in some values, invalid text values (N/A, NULL, Error), and missing data in Total_Spent
 
 **Raw Data from row 1 to 49**
 Screenshot:
@@ -60,22 +60,29 @@ Screenshot:
 
 ---
 
-### Data Cleaning Process: The following cleaning steps are performed to clean the above raw data set to ensure data accuracy and consistency.
+### Data Cleaning Process 
+The following cleaning steps are performed to clean the above raw data set to ensure data accuracy and consistency.
 
-#### Removing Duplicate Rows: Identified and removed 5 duplicate rows using Remove Duplicates.
+#### Removing Duplicate Rows 
+Identified and removed 5 duplicate rows using Remove Duplicates.
+
 Screenshot:
 ![Duplicate Removal](Cleaning/Screenshots/Duplicate/duplicates_removed.jpg)
 
 ---
 
-#### Removing Blank Rows: Removed 3 blank rows using Filter.
+#### Removing Blank Rows 
+Removed 3 blank rows using Filter.
 
 **Before Removing Blank Rows**
+
 Screenshot:
-![Before Removing Blank Rows](Cleaning/Screenshots/Blank/fixing_blank_rows.jpg)
+![Blank_Removal](Cleaning/Screenshots/blank/fixing_blank_rows.jpg)
 
 **After Removing Blank Rows**
-![After Removing Blank Rows](Cleaning/Screenshots/Blank/fixed_blank_rows.jpg)
+
+Screenshot:
+![Blank_Removal](Cleaning/Screenshots/blank/fixed_blank_rows.jpg)
 
 ---
 
