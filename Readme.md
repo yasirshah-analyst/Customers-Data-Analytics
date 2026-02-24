@@ -79,12 +79,10 @@ Screenshot:
 Removed 3 blank rows using Filter.
 
 **Before Removing Blank Rows**
-
 Screenshot:
 ![Blank_Removal](Cleaning/Screenshots/blank/fixing_blank_rows.jpg)
 
 **After Removing Blank Rows**
-
 Screenshot:
 ![Blank_Removal](Cleaning/Screenshots/blank/fixed_blank_rows.jpg)
 
