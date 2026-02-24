@@ -147,7 +147,9 @@ Checks whether the last character in cell C2 is a period.
 If true, it appends "com" to the end of the email address.
 
 If false, it leaves the original value unchanged.
+
 Screenshot:
+
 ![Fixing Missing "com"](Cleaning/Screenshots/Email/ends_with_._fixed.jpg)
 
 ##### Handling Missing Email Values 
