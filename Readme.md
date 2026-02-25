@@ -164,6 +164,7 @@ Returns "No_Email_Provided" if the cell is empty.
 Otherwise, it keeps the existing email address.
 
 This step ensured that missing values were clearly identified instead of being left blank.
+
 Screenshot:
 ![Handling Missing Email](Cleaning/Screenshots/Email/no_email_fixed.jpg)
 
@@ -173,6 +174,7 @@ Screenshot:
 
 ##### Standardizing Country Name Casing 
 The Country column contained inconsistent capitalization. To standardize the full country names, the PROPER() function was applied to ensure that each word begins with a capital letter.
+
 Screenshot:
 ![Fixing casing issues](Cleaning/Screenshots/Country/fixing_case_issues_in_country.jpg)
 
@@ -189,6 +191,7 @@ Screenshot:
 
 ##### Handling Missing Country Values 
 Replaced blank country values with "Unknown" using Find & Replace.
+
 Screenshot:
 ![Handling Missing Country](Cleaning/Screenshots/Country/missing_country_names_fixed.jpg)
 
@@ -224,7 +227,7 @@ Screenshot:
 ##### Standardizing Currency Values and Replacing Invalid Data from Total_Spent 
 Removed $ symbols from Total Spent values, Converting invalid entries such as: N/A,NULL,#VALUE to blank values by using the formula shown in the formula bar of the screenshot below.
 Screenshot:
-![Standardizing_Currency_Values_and_Replacing_Invalid_Data](Cleaning/Screenshots/Spent/total_spent_issue 1_fix.jpg)
+![Standardizing_Currency_Values_and_Replacing_Invalid_Data](Cleaning/Screenshots/Spent/total_spent_issue_1_fix.jpg)
 
 Checks if G2 equals "N/A", "null”
 
