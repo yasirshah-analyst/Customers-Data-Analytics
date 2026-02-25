@@ -462,7 +462,7 @@ The dashboard includes:
 
 ### Chart Level Insights: Each chart is accompanied by a chart level insight displayed below it,summarizing the key takeaway from the analysis.
 Dashboard Screenshot:
-![Dashboard](Dashboard/Dashboard_screenshot/dashboard.jpg)
+![Dashboard](Dashboard/Dashboard_Screenshot/dashboard.jpg)
 
 ---
 
