@@ -426,9 +426,9 @@ Analysis Screenshot:
 ![Analysis](Analysis/Output/Analysis.jpg)
 
 ### Insights Generated
--2.3% of Customers (4 Customers) have no purchases, highlighting minor data quality issues in the raw dataset. These entries were flagged as missing in the cleaned dataset to ensure accurate calculations in analysis.
--While the top country generates $71,500 in total spending, the combined spending of other countries is significantly higher at around $1,447,800, showing that overall revenue is largely driven by multiple markets rather than a single country.
--The USA has the highest total spent, but the other top countries also contribute meaningfully , supporting overall revenue growth.
+- 2.3% of Customers (4 Customers) have no purchases, highlighting minor data quality issues in the raw dataset. These entries were flagged as missing in the cleaned dataset to ensure accurate calculations in analysis.
+- While the top country generates $71,500 in total spending, the combined spending of other countries is significantly higher at around $1,447,800, showing that overall revenue is largely driven by multiple markets rather than a single country.
+- The USA has the highest total spent, but the other top countries also contribute meaningfully , supporting overall revenue growth.
 
 ---
 
@@ -462,7 +462,7 @@ The dashboard includes:
 
 ### Chart Level Insights: Each chart is accompanied by a chart level insight displayed below it,summarizing the key takeaway from the analysis.
 Dashboard Screenshot:
-![Dashboard](dashboard/dashboard_screenshots/dashboard.jpg)
+![Dashboard](Dashboard/Dashboard_screenshots/dashboard.jpg)
 
 ---
 
