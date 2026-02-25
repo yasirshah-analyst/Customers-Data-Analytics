@@ -386,7 +386,7 @@ INDEX('Supporting Table 1'!B4:B115, …) => Retrieves the value from column B of
 
 **Formulas used in answering these business questions**
 Screenshot:
-![kpi_Calculation](Cleaning/Screenshots/Analysis/Screenshots/kpi_formulas.jpg)
+![kpi_Calculation](Analysis/Screenshots/kpi_formulas.jpg)
 
 ---
 
