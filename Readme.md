@@ -394,7 +394,7 @@ Screenshot:
 
 Calculated total spending distribution by country using formula shown in the formula bar in the following screenshot of Supporting Table 1 sheet
 Screenshot:
-![spending_distribution_by_country ](Cleaning/Screenshots/Analysis/Screenshots/spend_by_country.jpg)
+![spending_distribution_by_country ](Analysis/Screenshots/spend_by_country.jpg)
 
 Clean!D:D => The range containing the criteria values.
 
@@ -414,11 +414,11 @@ Filter => Number filter => Top 25
 
 **Filtering Top 25 Countries By Total Spending**
 Screenshot:
-![filtering_spending_distribution_by_country_25 ](Cleaning/Screenshots/Analysis/Screenshots/purchase_distribution_by_country_top_25_1.jpg)
+![filtering_spending_distribution_by_country_25 ](Analysis/Screenshots/purchase_distribution_by_country_top_25_1.jpg)
 
 **Top 25 Countries By Total Spending**
 Screenshot:
-![spending_distribution_by_country_25 ](Cleaning/Screenshots/Analysis/Screenshots/purchase_distribution_by_country_top_25_2.jpg)
+![spending_distribution_by_country_25](Analysis/Screenshots/purchase_distribution_by_country_top_25_2.jpg)
 
 ---
 
