@@ -393,6 +393,7 @@ Screenshot:
 ### How is total spending distributed by country?
 
 Calculated total spending distribution by country using formula shown in the formula bar in the following screenshot of Supporting Table 1 sheet
+
 Screenshot:
 ![spending_distribution_by_country ](Analysis/Screenshots/spend_by_country.jpg)
 
@@ -435,32 +436,37 @@ Analysis Screenshot:
 ## 📊 Dashboard Creation: An excel dashboard was created to summarize insights visually.
 
 The dashboard includes:
--KPIs
--Charts
--Chart level Insights
+- KPIs
+- Charts
+- Chart level Insights
 
 ---
 
 ### Key Performance Indicators (KPIs): The following KPIs were displayed at the top of the dashboard to summarize overall performance:
--Total Customers 
--Number of Customers having  Purchase 
--Number of Customers having no Purchase
--Total Purchase 
--Top Country by Spending
+- Total Customers 
+- Number of Customers having  Purchase 
+- Number of Customers having no Purchase
+- Total Purchase 
+- Top Country by Spending
 
 ---
 
 ### Charts
 
-#### 1. Percentage of Customers by Purchase: This chart presents the percentage distribution of customers based on their purchase behavior — those who made at least one purchase versus those who made none.
+#### 1. Percentage of Customers by Purchase 
+This chart presents the percentage distribution of customers based on their purchase behavior — those who made at least one purchase versus those who made none.
 
-#### 2. Total Spending_Top Country vs. Other Countries: This chart compares the total spending by the highest-performing country against the combined spending of all other countries.
+#### 2. Total Spending_Top Country vs. Other Countries 
+This chart compares the total spending by the highest-performing country against the combined spending of all other countries.
 
-#### 3. Total Spending Distribution by Country (Top 25): This chart visualizes and compares the total number of purchases made across the top 25 countries ranked by purchase volume.
+#### 3. Total Spending Distribution by Country (Top 25) 
+This chart visualizes and compares the total number of purchases made across the top 25 countries ranked by purchase volume.
 
 ---
 
-### Chart Level Insights: Each chart is accompanied by a chart level insight displayed below it,summarizing the key takeaway from the analysis.
+### Chart Level Insights 
+Each chart is accompanied by a chart level insight displayed below it,summarizing the key takeaway from the analysis.
+
 Dashboard Screenshot:
 ![Dashboard](Dashboard/Dashboard_Screenshot/dashboard.jpg)
 
