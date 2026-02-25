@@ -118,6 +118,8 @@ This approach standardized the structure and improved the overall quality of the
 Screenshot:
 ![Email Cleaning](Cleaning/Screenshots/Email/fixing_extra_spaces,@@,..,uppercase_in_email.jpg)
 
+---
+
 ##### Correcting Domain Formatting Issues 
 Some email addresses had incorrect or incomplete domain formats. These were corrected using FIND() and REPLACE() functions:
 
@@ -135,6 +137,8 @@ Screenshot:
 Screenshot:
 ![Fixing "@.com"](Cleaning/Screenshots/Email/fixing_@.com.jpg)
 
+---
+
 ##### Fixing Missing “.com” Extensions 
 Certain email entries ended with a period (.), indicating that the "com" extension was missing. To correct this, the following formula was used:
 
@@ -151,6 +155,8 @@ If false, it leaves the original value unchanged.
 Screenshot:
 
 ![Fixing Missing "com"](Cleaning/Screenshots/Email/ends_with_._fixed.jpg)
+
+---
 
 ##### Handling Missing Email Values 
 Some records contained blank email fields. To fix this, the following formula was applied:
@@ -178,6 +184,8 @@ The Country column contained inconsistent capitalization. To standardize the ful
 Screenshot:
 ![Fixing casing issues](Cleaning/Screenshots/Country/fixing_case_issues_in_country.jpg)
 
+---
+
 ##### Correcting Abbreviated Country Names 
 After applying the proper case formatting, some abbreviated country names were unintentionally altered (e.g., USA became Usa, and U.S.A became U.s.a). Since only a small number of records were affected, these entries were filtered and manually corrected to restore their accurate uppercase format (e.g., USA, UK).
 
@@ -188,6 +196,8 @@ Screenshot:
 **After Cleaning**
 Screenshot:
 ![After Correction](Cleaning/Screenshots/Country/short_country_name_issues_fixed.jpg)
+
+---
 
 ##### Handling Missing Country Values 
 Replaced blank country values with "Unknown" using Find & Replace.
@@ -224,6 +234,8 @@ Screenshot:
 Screenshot:
 ![After Cleaning](Cleaning/Screenshots/Date/date_issue_fixed.jpg)
 
+---
+
 ##### Standardizing Currency Values and Replacing Invalid Data from Total_Spent 
 Removed $ symbols from Total Spent values, Converting invalid entries such as: N/A,NULL,#VALUE to blank values by using the formula shown in the formula bar of the screenshot below.
 Screenshot:
@@ -237,6 +249,7 @@ Otherwise => converts G2 to a number using VALUE(G2)
 
 If any error happens => returns ""
 
+---
 
 #####  Handling Missing Values
 
@@ -257,7 +270,9 @@ If the AND condition is TRUE => returns "Missing_Purchase_Date"
 
 If FALSE => returns "OK"
 Screenshot:
-![Flagging_Missing_Dates](Cleaning/Screenshots/Date/date_missing _fixed.jpg)
+![Flagging_Missing_Dates](Cleaning/Screenshots/Date/date_missing_fixed.jpg)
+
+---
 
 ###### Flagging Missing Total_Spent 
 Created a Data_Quality_Flag column that flags missing values in Total_Spent as "Missing_Total_Spent" using formula =IF(AND(E2<>"",TRIM(G2)=""),"Missing_Total_Spent","OK")
