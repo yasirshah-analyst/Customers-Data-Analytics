@@ -1,7 +1,5 @@
 # Customer Data Cleaning and Purchase Analysis Dashboard
 
----
-
 ## Project Overview 
 This project is a customer analytics project that includes data cleaning, purchase analysis, and dashboard visualization using Excel. The goal is to analyze customer purchase behavior and extract meaningful insights.
 
