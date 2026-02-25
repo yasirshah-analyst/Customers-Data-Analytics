@@ -270,6 +270,7 @@ IF(logical_test, value_if_true, value_if_false)
 If the AND condition is TRUE => returns "Missing_Purchase_Date"
 
 If FALSE => returns "OK"
+
 Screenshot:
 ![Flagging_Missing_Dates](Cleaning/Screenshots/Date/date_missing_fixed.jpg)
 
@@ -287,6 +288,7 @@ AND(E2<>"", TRIM(G2)="") => Both conditions must be TRUE.
 IF(..., "Missing_Total_Spent", "OK")
 
 If both conditions are TRUE => returns "Missing_Total_Spent", Otherwise => returns "OK"
+
 Screenshot:
 ![Flagging_Missing_Spent](Cleaning/Screenshots/Spent/total_spent_issue_2_fix.jpg)
 
