@@ -1,5 +1,7 @@
 # Customer Data Cleaning and Purchase Analysis Dashboard
 
+---
+
 ## Project Overview 
 This project is a customer analytics project that includes data cleaning, purchase analysis, and dashboard visualization using Excel. The goal is to analyze customer purchase behavior and extract meaningful insights.
 
@@ -44,6 +46,8 @@ Total_Spent($)
 ## Privacy Notice
 - Due to privacy considerations,the complete Excel dataset is not publicly shared. Selected sample screenshots from raw dataset and supporting table are provided to demonstrate the cleaning and analysis workflow
 
+---
+
 ## Data Cleaning 
 This project focuses on cleaning and preparing raw data set using Excel.The raw dataset contained several inconsistencies and missing values, including:
 - Extra spaces and inconsistent casing in Customer_Name
@@ -51,6 +55,8 @@ This project focuses on cleaning and preparing raw data set using Excel.The raw 
 - Capitalization inconsistencies, issues in abbreviated names, and missing entries in Country
 - Mixed formats, incorrect entry, and missing values in Date
 - Currency symbols in some values, invalid text values (N/A, NULL, Error), and missing data in Total_Spent
+
+---
 
 **Raw Data from row 1 to 49**
 Screenshot:
@@ -310,8 +316,12 @@ Additionally, two new columns were created to improve data quality monitoring:
 
 The cleaned dataset is structured, validated, and ready for further analysis, reporting, or visualization.
 
+---
+
 ### Note 
 The four customers with no purchases were flagged as missing in cleaned data set due to N/A, NULL and #VALUE Total Spent entries in the raw dataset. 
+
+---
 
 **Clean Data from row 1 to 43**
 Screenshot:
@@ -384,6 +394,8 @@ MATCH(..., 'Supporting Table 1'!C4:C115, 0) => Returns the position of that maxi
 
 INDEX('Supporting Table 1'!B4:B115, …) => Retrieves the value from column B of supporting table at that same position.
 
+---
+
 **Formulas used in answering these business questions**
 Screenshot:
 ![kpi_Calculation](Analysis/Screenshots/kpi_formulas.jpg)
@@ -395,6 +407,7 @@ Screenshot:
 Calculated total spending distribution by country using formula shown in the formula bar in the following screenshot of Supporting Table 1 sheet
 
 Screenshot:
+
 ![spending_distribution_by_country ](Analysis/Screenshots/spend_by_country.jpg)
 
 Clean!D:D => The range containing the criteria values.
@@ -426,6 +439,8 @@ Screenshot:
 Analysis Screenshot:
 ![Analysis](Analysis/Output/Analysis.jpg)
 
+---
+
 ### Insights Generated
 - 2.3% of Customers (4 Customers) have no purchases, highlighting minor data quality issues in the raw dataset. These entries were flagged as missing in the cleaned dataset to ensure accurate calculations in analysis.
 - While the top country generates $71,500 in total spending, the combined spending of other countries is significantly higher at around $1,447,800, showing that overall revenue is largely driven by multiple markets rather than a single country.
@@ -442,7 +457,8 @@ The dashboard includes:
 
 ---
 
-### Key Performance Indicators (KPIs): The following KPIs were displayed at the top of the dashboard to summarize overall performance:
+### Key Performance Indicators (KPIs) 
+The following KPIs were displayed at the top of the dashboard to summarize overall performance:
 - Total Customers 
 - Number of Customers having  Purchase 
 - Number of Customers having no Purchase
@@ -466,6 +482,8 @@ This chart visualizes and compares the total number of purchases made across the
 
 ### Chart Level Insights 
 Each chart is accompanied by a chart level insight displayed below it,summarizing the key takeaway from the analysis.
+
+---
 
 Dashboard Screenshot:
 ![Dashboard](Dashboard/Dashboard_Screenshot/dashboard.jpg)
