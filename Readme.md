@@ -467,7 +467,7 @@ The following KPIs were displayed at the top of the dashboard to summarize overa
 
 ### Charts
 
-#### 1. Percentage of Customers by Purchase 
+#### 1. Customer Distribution 
 This chart presents the percentage distribution of customers based on their purchase behavior — those who made at least one purchase versus those who made none.
 
 #### 2. Total Spending_Top Country vs. Other Countries 
@@ -475,11 +475,6 @@ This chart compares the total spending by the highest-performing country against
 
 #### 3. Total Spending Distribution by Country (Top 25) 
 This chart visualizes and compares the total number of purchases made across the top 25 countries ranked by purchase volume.
-
----
-
-### Chart Level Insights 
-Each chart is accompanied by a chart level insight displayed below it,summarizing the key takeaway from the analysis.
 
 ---
 
