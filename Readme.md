@@ -484,7 +484,7 @@ Each chart is accompanied by a chart level insight displayed below it,summarizin
 ---
 
 Dashboard Screenshot:
-![Dashboard](Dashboard/Dashboard_Screenshot/dashboard.jpg)
+
 
 ---
 
