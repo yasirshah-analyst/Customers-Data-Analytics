@@ -120,6 +120,11 @@ Screenshot:
 ##### Removing Extra Spaces and Special Character Errors 
 The Email column contained several formatting issues, including unnecessary spaces, repeated symbols, and inconsistent letter casing. To resolve these issues, a nested formula combining SUBSTITUTE() and LOWER() functions was applied.
 
+**Formula:**
+```excel
+=LOWER(SUBSTITUTE(SUBSTITUE(SUBSTITUTE(C2," ",""),"@@","@"),"..",""))
+````
+
 The innermost SUBSTITUTE() function removed any extra spaces within the email address.
 
 The second SUBSTITUTE() replaced double at symbols (@@) with a single @.
