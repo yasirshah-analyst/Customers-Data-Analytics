@@ -99,6 +99,15 @@ Used TRIM() to eliminate unnecessary leading and trailing spaces.
 
 Applied PROPER() to standardize text formatting by capitalizing the first letter of each word in customer names.
 
+**Example formula:**
+```excel
+=IF(ISBLANK(D4),1,0)
+````
+**Example formula:**
+```excel
+=IF(ISBLANK(D4),1,0)
+````
+
 Screenshot:
 ![Standardizing Text](Cleaning/Screenshots/Customer_Name/fixing_case_issue_and_extra_spaces_in_cust-name.jpg)
 
