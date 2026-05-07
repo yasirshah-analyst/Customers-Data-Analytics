@@ -95,14 +95,16 @@ Screenshot:
 #### Standardizing Customer_Name 
 Fixed inconsistent text casing and removed extra leading spaces in the Customer_Name column using Excel functions.
 
+**Formula:**
+```excel
+=PROPER(TRIM(B2))
+````
+
 Used TRIM() to eliminate unnecessary leading and trailing spaces.
 
 Applied PROPER() to standardize text formatting by capitalizing the first letter of each word in customer names.
 
-**Example formula:**
-```excel
-=IF(ISBLANK(D4),1,0)
-````
+
 **Example formula:**
 ```excel
 =IF(ISBLANK(D4),1,0)
