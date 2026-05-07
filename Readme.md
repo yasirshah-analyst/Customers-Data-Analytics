@@ -372,7 +372,12 @@ After cleaning, the dataset was analyzed to answer the following business questi
 
 ### What is the total number of unique customers?
 
-Determined the total number of customers using : COUNTA(Clean!B2:B175)
+Determined the total number of customers using : 
+
+**Formula:**
+```excel
+= COUNTA(Clean!B2:B175)
+````
 
 This formula gave me the total number of customers listed in column B (from row 2 to 175) of sheet Clean.
 
@@ -380,7 +385,12 @@ This formula gave me the total number of customers listed in column B (from row 
 
 ### How many  customers have made zero purchases ?
 
-Identified customers with zero purchases using : COUNTBLANK(Clean!G2:G175)
+Identified customers with zero purchases using : 
+
+**Formula:**
+```excel
+= COUNTBLANK(Clean!G2:G175)
+````
 
 Counts blank cells in column G of clean sheet. Assumes: if the cell is blank => customer made zero purchases.
 
@@ -388,7 +398,12 @@ Counts blank cells in column G of clean sheet. Assumes: if the cell is blank => 
 
 ### What percentage of customers made no purchase?
 
-Calculated the percentage of customers with no purchases using : COUNTIF(Clean!G2:G175,"")/COUNTA(Clean2!B2:B175)
+Calculated the percentage of customers with no purchases using : 
+
+**Formula:**
+```excel
+= COUNTIF(Clean!G2:G175,"")/COUNTA(Clean2!B2:B175)
+````
 
 COUNTIF(Clean!G2:G175,"") => counts blank purchase cells.
 
@@ -400,7 +415,12 @@ Dividing gives the percentage of customers with zero purchases.
 
 ### What is the overall total spending?
 
-Calculated total spending using : SUM(Clean!G:G)
+Calculated total spending using : 
+
+**Formula:**
+```excel
+= SUM(Clean!G:G)
+````
 
 This formula calculates the total purchase amount by summing all values in column G of the Clean sheet, which contains the processed and validated transaction data.
 
@@ -408,7 +428,12 @@ This formula calculates the total purchase amount by summing all values in colum
 
 ### What is the average spend per customer?
 
-Computed the average spend per customer using : AVERAGE(Clean!G2:G175)
+Computed the average spend per customer using : 
+
+**Formula:**
+```excel
+= AVERAGE(Clean!G2:G175)
+````
 
 AVERAGE computes the mean of numeric values.
 
@@ -420,7 +445,12 @@ Blank and text cells are automatically ignored.
 
 ### Which country generate the highest revenue?
 
-Identified the top revenue-generating country using : INDEX('Supporting Table 1'!B4:B115,MATCH(MAX('Supporting Table 1'!C4:C115),'Supporting Table 1'!C4:C115,0))
+Identified the top revenue-generating country using : 
+
+**Formula:**
+```excel
+= INDEX('Supporting Table 1'!B4:B115,MATCH(MAX('Supporting Table 1'!C4:C115),'Supporting Table 1'!C4:C115,0))
+````
 
 MAX('Supporting Table 1'!C4:C115) => Finds the highest value in column C of supporting table.
 
@@ -438,7 +468,12 @@ Screenshot:
 
 ### How is total spending distributed by country?
 
-Calculated total spending distribution by country using formula shown in the formula bar in the following screenshot of Supporting Table 1 sheet
+Calculated total spending distribution by country using formula 
+
+**Formula:**
+```excel
+= INDEX('Supporting Table 1'!B4:B115,MATCH(MAX('Supporting Table 1'!C4:C115),'Supporting Table 1'!C4:C115,0))
+````
 
 Screenshot:
 
