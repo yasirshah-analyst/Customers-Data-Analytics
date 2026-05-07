@@ -285,7 +285,12 @@ If any error happens => returns ""
 #####  Handling Missing Values
 
 ###### Flagging Missing Last_Purchase_Date 
-Created a Data_Issue_Flag column that flags missing values in Last_Purchase_Date as "Missing_Purchase_Date" using formula =IF(AND(G2>0,E2=""),"Missing_Purchase_Date","OK")
+Created a Data_Issue_Flag column that flags missing values in Last_Purchase_Date as "Missing_Purchase_Date" using formula 
+
+**Formula:**
+```excel
+=IF(AND(G2>0,E2=""),"Missing_Purchase_Date","OK")
+````
 
 This formula checks two conditions at the same time using AND
 
@@ -307,7 +312,12 @@ Screenshot:
 ---
 
 ###### Flagging Missing Total_Spent 
-Created a Data_Quality_Flag column that flags missing values in Total_Spent as "Missing_Total_Spent" using formula =IF(AND(E2<>"",TRIM(G2)=""),"Missing_Total_Spent","OK")
+Created a Data_Quality_Flag column that flags missing values in Total_Spent as "Missing_Total_Spent" using formula 
+
+**Formula:**
+```excel
+=IF(AND(E2<>"",TRIM(G2)=""),"Missing_Total_Spent","OK")
+````
 
 E2<>"" => Checks if cell E2 is NOT empty.
 
