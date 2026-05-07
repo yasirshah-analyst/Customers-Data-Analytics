@@ -24,6 +24,9 @@ This project is a customer analytics project that includes data cleaning, purcha
 ---
 ## 📁 Project Structure
 
+```text
+START ─────────────────────────────────────────────
+
 Customer Data Cleaning & Purchase Analysis Dashboard/
 │
 ├── Data/
@@ -81,6 +84,9 @@ Customer Data Cleaning & Purchase Analysis Dashboard/
 │       └── dashboard.jpg
 │
 └── README.md
+
+END ─────────────────────────────────────────────
+``` 
 
 ---
 
