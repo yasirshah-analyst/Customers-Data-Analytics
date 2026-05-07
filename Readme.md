@@ -472,7 +472,7 @@ Calculated total spending distribution by country using formula
 
 **Formula:**
 ```excel
-= INDEX('Supporting Table 1'!B4:B115,MATCH(MAX('Supporting Table 1'!C4:C115),'Supporting Table 1'!C4:C115,0))
+= SUMIF(Clean!D:D,B4,Clean!G:G)
 ````
 
 Screenshot:
