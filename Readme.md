@@ -122,7 +122,7 @@ The Email column contained several formatting issues, including unnecessary spac
 
 **Formula:**
 ```excel
-=LOWER(SUBSTITUTE(SUBSTITUE(SUBSTITUTE(C2," ",""),"@@","@"),"..",""))
+=LOWER(SUBSTITUTE(SUBSTITUE(SUBSTITUTE(C2," ",""),"@@","@"),"..","."))
 ````
 
 The innermost SUBSTITUTE() function removed any extra spaces within the email address.
@@ -162,7 +162,10 @@ Screenshot:
 ##### Fixing Missing “.com” Extensions 
 Certain email entries ended with a period (.), indicating that the "com" extension was missing. To correct this, the following formula was used:
 
-IF(RIGHT(C2,1)=".", C2&"com", C2)
+**Formula:**
+```excel
+=IF(RIGHT(C2,1)=".", C2&"com", C2)
+````
 
 This formula:
 
@@ -181,7 +184,10 @@ Screenshot:
 ##### Handling Missing Email Values 
 Some records contained blank email fields. To fix this, the following formula was applied:
 
-IF(C2="", "No_Email_Provided", C2)
+**Formula:**
+```excel
+=IF(C2="", "No_Email_Provided", C2)
+````
 
 This formula:
 
