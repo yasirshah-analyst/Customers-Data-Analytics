@@ -22,6 +22,67 @@ This project is a customer analytics project that includes data cleaning, purcha
 - Data Formatting
 
 ---
+## 📁 Project Structure
+
+Customer Data Cleaning & Purchase Analysis Dashboard/
+│
+├── Data/
+│   ├── Raw/
+│   │   ├── raw_1.jpg
+│   │   └── raw_2.jpg
+│   │
+│   └── Cleaned/
+│       ├── clean_1.jpg
+│       └── clean_2.jpg
+│
+├── Cleaning/
+│   └── Screenshots/
+│       ├── Country/
+│       │   ├── fixing_case_issues_in_country.jpg
+│       │   ├── missing_country_names_fixed.jpg
+│       │   ├── short_country_name_issues_fixed.jpg
+│       │   └── short_country_names_issues.jpg
+│       │
+│       ├── Customer_Name/
+│       │   └── fixing_case_issue_and_extra_spaces_in_cust-name.jpg
+│       │
+│       ├── Date/
+│       │   ├── date_issue_fixed.jpg
+│       │   ├── date_issues.jpg
+│       │   ├── date_issues_fixing.jpg
+│       │   └── date_missing_fixed.jpg
+│       │
+│       ├── Duplicate/
+│       │   └── duplicates_removed.jpg
+│       │
+│       ├── Email/
+│       │   ├── emailcom_fixed.jpg
+│       │   ├── ends_with_._fixed.jpg
+│       │   ├── fixing_@.com.jpg
+│       │   ├── fixing_extra_spaces_@@_uppercase_in_email.jpg
+│       │
+│       └── Spent/
+│           ├── total_spent_issue_1_fix.jpg
+│           ├── total_spent_issue_2_fix.jpg
+│           └── blank/
+│               ├── fixed_blank_rows.jpg
+│               └── fixing_blank_rows.jpg
+│
+├── Analysis/
+│   ├── Analysis.jpg
+│   └── Screenshots/
+│       ├── kpi_formulas.jpg
+│       ├── purchase_distribution_by_country_top_25_1.jpg
+│       ├── purchase_distribution_by_country_top_25_2.jpg
+│       └── spend_by_country.jpg
+│
+├── Dashboard/
+│   └── Dashboard_Screenshot/
+│       └── dashboard.jpg
+│
+└── README.md
+
+---
 
 ## Dataset Information
 - **Source:** The data set used in this project was generated using DeepSeek AI(a generative artificial intelligence platform)  for portfolio purpose. All data is synthetic and does not represent real individuals.
