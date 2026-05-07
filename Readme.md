@@ -262,7 +262,12 @@ Screenshot:
 ---
 
 ##### Standardizing Currency Values and Replacing Invalid Data from Total_Spent 
-Removed $ symbols from Total Spent values, Converting invalid entries such as: N/A,NULL,#VALUE to blank values by using the formula shown in the formula bar of the screenshot below.
+Removed $ symbols from Total Spent values, Converting invalid entries such as: N/A,NULL,#VALUE to blank values by using the formula
+
+**Formula:**
+```excel
+=IFERROR(IF(OR(F6="N/A",F6="NULL"),"",VALUE(F6)),"")
+````
 
 Screenshot:
 ![Standardizing_Currency_Values_and_Replacing_Invalid_Data](Cleaning/Screenshots/Spent/total_spent_issue_1_fix.jpg)
