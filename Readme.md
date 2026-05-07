@@ -104,12 +104,6 @@ Used TRIM() to eliminate unnecessary leading and trailing spaces.
 
 Applied PROPER() to standardize text formatting by capitalizing the first letter of each word in customer names.
 
-
-**Example formula:**
-```excel
-=IF(ISBLANK(D4),1,0)
-````
-
 Screenshot:
 ![Standardizing Text](Cleaning/Screenshots/Customer_Name/fixing_case_issue_and_extra_spaces_in_cust-name.jpg)
 
@@ -206,6 +200,11 @@ Screenshot:
 
 ##### Standardizing Country Name Casing 
 The Country column contained inconsistent capitalization. To standardize the full country names, the PROPER() function was applied to ensure that each word begins with a capital letter.
+
+**Formula:**
+```excel
+=PROPER(D2)
+````
 
 Screenshot:
 ![Fixing casing issues](Cleaning/Screenshots/Country/fixing_case_issues_in_country.jpg)
