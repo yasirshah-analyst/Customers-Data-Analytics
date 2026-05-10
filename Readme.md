@@ -617,7 +617,7 @@ This chart visualizes and compares the total number of purchases made across the
 ---
 
 Dashboard Screenshot:
-![Dashboard](Dashboard/Dashboard_Screenshot/dashboard.jpg)
+![Dashboard](Dashboard/Dashboard_Screenshot/dashboard.png)
 
 ---
 
