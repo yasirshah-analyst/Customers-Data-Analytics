@@ -156,13 +156,12 @@ Identified and removed 5 duplicate rows using Remove Duplicates.
 #### Removing Blank Rows 
 Removed 3 blank rows using Filter.
 
-**Before Removing Blank Rows**
-Screenshot:
-![Blank_Removal](Cleaning/Screenshots/blank/fixing_blank_rows.jpg)
-
-**After Removing Blank Rows**
-Screenshot:
-![Blank_Removal](Cleaning/Screenshots/blank/fixed_blank_rows.jpg)
+**View Screenshot:**
+ 
+<ul>
+<li>Before: <a href="Cleaning/Screenshots/Spent/blank/fixing_blank_rows.jpg">Blank rows present</a></li>
+<li>After: <a href="Cleaning/Screenshots/Spent/blank/fixed_blank_rows.jpg">Blank rows removed</a></li>
+</ul>
 
 ---
 
