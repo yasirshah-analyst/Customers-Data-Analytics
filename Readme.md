@@ -182,30 +182,26 @@ Fixed inconsistent text casing and removed extra leading spaces in the Customer_
 
 #### Email Column Cleaning and Standardization
 
-##### Removing Extra Spaces and Special Character Errors 
+**Removing extra spaces and special-character errors** 
 The Email column contained several formatting issues, including unnecessary spaces, repeated symbols, and inconsistent letter casing. To resolve these issues, a nested formula combining SUBSTITUTE() and LOWER() functions was applied.
 
 **Formula:**
 ```excel
-=LOWER(SUBSTITUTE(SUBSTITUE(SUBSTITUTE(C2," ",""),"@@","@"),"..","."))
+=LOWER(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(C2," ",""),"@@","@"),"..","."))
 ````
 
-The innermost SUBSTITUTE() function removed any extra spaces within the email address.
+- Innermost `SUBSTITUTE()` removes extra spaces
+- Middle `SUBSTITUTE()` replaces `@@` with a single `@`
+- Outer `SUBSTITUTE()` replaces `..` with a single `.`
+- `LOWER()` standardizes casing
 
-The second SUBSTITUTE() replaced double at symbols (@@) with a single @.
-
-The outermost SUBSTITUTE() corrected duplicate dots (..) by replacing them with a single dot (.).
-
-Finally, the LOWER() function converted the entire cleaned email address to lowercase to ensure consistent formatting across the dataset.
-
-This approach standardized the structure and improved the overall quality of the email data.
-
-Screenshot:
-![Email Cleaning](Cleaning/Screenshots/Email/fixing_extra_spaces,@@,..,uppercase_in_email.jpg)
+**View Screenshot:**
+ 
+- [Fixing spaces, @@, .., and casing](Cleaning/Screenshots/Email/fixing_extra_spaces,@@,..,uppercase_in_email.jpg)
 
 ---
 
-##### Correcting Domain Formatting Issues 
+**Correcting domain formatting issues**
 Some email addresses had incorrect or incomplete domain formats. These were corrected using FIND() and REPLACE() functions:
 
 Replaced "emailcom" with "email.com".
@@ -214,13 +210,9 @@ Replaced "@.com" with "@email.com".
 
 These corrections ensured that domain names followed a valid and consistent structure.
 
-**Fixing "emailcom"**
-Screenshot:
-![Fixing "emailcom"](Cleaning/Screenshots/Email/emailcom_fixed.jpg)
-
-**Fixing "@.com"**
-Screenshot:
-![Fixing "@.com"](Cleaning/Screenshots/Email/fixing_@.com.jpg)
+**View Screenshots:**
+[Fixing "emailcom"](Cleaning/Screenshots/Email/emailcom_fixed.jpg)
+[Fixing "@.com"](Cleaning/Screenshots/Email/fixing_@.com.jpg)
 
 ---
 
