@@ -514,12 +514,6 @@ INDEX('Supporting Table 1'!B4:B115, …) => Retrieves the value from column B of
 
 ---
 
-**Formulas used in answering these business questions**
-Screenshot:
-![kpi_Calculation](Analysis/Screenshots/kpi_formulas.jpg)
-
----
-
 ### How is total spending distributed by country?
 
 Calculated total spending distribution by country using formula 
