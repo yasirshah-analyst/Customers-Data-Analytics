@@ -424,96 +424,6 @@ After cleaning, the dataset was analyzed to answer the following business questi
 
 *`'Supporting Table 1'` is a helper table listing each country alongside its total spend, built to make the INDEX/MATCH lookup possible.*
 
-### What is the total number of unique customers?
-
-Determined the total number of customers using : 
-
-**Formula:**
-```excel
-= COUNTA(Clean!B2:B175)
-````
-
-This formula gave me the total number of customers listed in column B (from row 2 to 175) of sheet Clean.
-
----
-
-### How many  customers have made zero purchases ?
-
-Identified customers with zero purchases using : 
-
-**Formula:**
-```excel
-= COUNTBLANK(Clean!G2:G175)
-````
-
-Counts blank cells in column G of clean sheet. Assumes: if the cell is blank => customer made zero purchases.
-
----
-
-### What percentage of customers made no purchase?
-
-Calculated the percentage of customers with no purchases using : 
-
-**Formula:**
-```excel
-= COUNTIF(Clean!G2:G175,"")/COUNTA(Clean2!B2:B175)
-````
-
-COUNTIF(Clean!G2:G175,"") => counts blank purchase cells.
-
-COUNTA(Clean2!B2:B175) => counts total customers.
-
-Dividing gives the percentage of customers with zero purchases.
-
----
-
-### What is the overall total spending?
-
-Calculated total spending using : 
-
-**Formula:**
-```excel
-= SUM(Clean!G:G)
-````
-
-This formula calculates the total purchase amount by summing all values in column G of the Clean sheet, which contains the processed and validated transaction data.
-
----
-
-### What is the average spend per customer?
-
-Computed the average spend per customer using : 
-
-**Formula:**
-```excel
-= AVERAGE(Clean!G2:G175)
-````
-
-AVERAGE computes the mean of numeric values.
-
-Clean!G2:G175 references customer spend data in the Clean worksheet.
-
-Blank and text cells are automatically ignored.
-
----
-
-### Which country generate the highest revenue?
-
-Identified the top revenue-generating country using : 
-
-**Formula:**
-```excel
-= INDEX('Supporting Table 1'!B4:B115,MATCH(MAX('Supporting Table 1'!C4:C115),'Supporting Table 1'!C4:C115,0))
-````
-
-MAX('Supporting Table 1'!C4:C115) => Finds the highest value in column C of supporting table.
-
-MATCH(..., 'Supporting Table 1'!C4:C115, 0) => Returns the position of that maximum value.
-
-INDEX('Supporting Table 1'!B4:B115, …) => Retrieves the value from column B of supporting table at that same position.
-
----
-
 ### How is total spending distributed by country?
 
 Calculated total spending distribution by country using formula 
@@ -538,11 +448,6 @@ Filtered the supporting table using **Filter → Number Filter → Top 25**.
  
 - [Filtering top 25](Analysis/Screenshots/purchase_distribution_by_country_top_25_1.jpg)
 - [Top 25 result](Analysis/Screenshots/purchase_distribution_by_country_top_25_2.jpg)
-
----
-
-Analysis Screenshot:
-![Analysis](Analysis/Output/Analysis.jpg)
 
 ---
 
@@ -586,7 +491,6 @@ Dashboard Screenshot:
 ## 👤 Author
  
 **Yasir Shah** — Data Analyst | Excel | SQL | Power BI
-
 
 ---
 
