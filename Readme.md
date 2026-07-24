@@ -158,8 +158,8 @@ Removed 3 blank rows using Filter.
 
 **View Screenshot:**
  
-- Before: [Blank rows present](Cleaning/Screenshots/Spent/blank/fixing_blank_rows.jpg)
-- After: [Blank rows removed](Cleaning/Screenshots/Spent/blank/fixed_blank_rows.jpg)
+- Before: [Blank rows present](Cleaning/Screenshots/blank/fixing_blank_rows.jpg)
+- After: [Blank rows removed](Cleaning/Screenshots/blank/fixed_blank_rows.jpg)
 
 ---
 
