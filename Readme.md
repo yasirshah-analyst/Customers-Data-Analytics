@@ -415,12 +415,12 @@ After cleaning, the dataset was analyzed to answer the following business questi
  
 | # | Question | Formula | Result |
 |---|---|---|---|
-| 1 | Total unique customers | `=COUNTA(Clean!B2:B175)` | _fill in_ |
-| 2 | Customers with zero purchases | `=COUNTBLANK(Clean!G2:G175)` | _fill in_ |
-| 3 | % of customers with no purchase | `= COUNTIF(Clean!G2:G175,"")/COUNTA(Clean2!B2:B175)` | _fill in_ |
-| 4 | Overall total spending | `=SUM(Clean!G:G)` | _fill in_ |
-| 5 | Average spend per customer | `=AVERAGE(Clean!G2:G175)` | _fill in_ |
-| 6 | Top revenue-generating country | `= INDEX('Supporting Table 1'!B4:B115,MATCH(MAX('Supporting Table 1'!C4:C115),'Supporting Table 1'!C4:C115,0))` | _fill in_ |
+| 1 | Total unique customers | `=COUNTA(Clean!B2:B175)` | _174_ |
+| 2 | Customers with zero purchases | `=COUNTBLANK(Clean!G2:G175)` | _04_ |
+| 3 | % of customers with no purchase | `= COUNTIF(Clean!G2:G175,"")/COUNTA(Clean2!B2:B175)` | _2.3_ |
+| 4 | Overall total spending | `=SUM(Clean!G:G)` | _$ 1519300_ |
+| 5 | Average spend per customer | `=AVERAGE(Clean!G2:G175)` | _$ 8937_ |
+| 6 | Top revenue-generating country | `= INDEX('Supporting Table 1'!B4:B115,MATCH(MAX('Supporting Table 1'!C4:C115),'Supporting Table 1'!C4:C115,0))` | _USA_ |
 
 *`'Supporting Table 1'` is a helper table listing each country alongside its total spend, built to make the INDEX/MATCH lookup possible.*
 
