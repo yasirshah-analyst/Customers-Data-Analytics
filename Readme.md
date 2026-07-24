@@ -263,7 +263,7 @@ This step ensured that missing values were clearly identified instead of being l
 
 #### Country Column Cleaning
 
-##### Standardizing Country Name Casing 
+**Standardizing Country Name Casing**
 The Country column contained inconsistent capitalization. To standardize the full country names, the PROPER() function was applied to ensure that each word begins with a capital letter.
 
 **Formula:**
@@ -271,62 +271,46 @@ The Country column contained inconsistent capitalization. To standardize the ful
 =PROPER(D2)
 ````
 
-Screenshot:
-![Fixing casing issues](Cleaning/Screenshots/Country/fixing_case_issues_in_country.jpg)
+**View Screenshots:**
+
+[Fixing casing issues](Cleaning/Screenshots/Country/fixing_case_issues_in_country.jpg)
 
 ---
 
-##### Correcting Abbreviated Country Names 
-After applying the proper case formatting, some abbreviated country names were unintentionally altered (e.g., USA became Usa, and U.S.A became U.s.a). Since only a small number of records were affected, these entries were filtered and manually corrected to restore their accurate uppercase format (e.g., USA, UK).
+**Correcting abbreviated names**
+ 
+`PROPER()` unintentionally altered abbreviations (e.g. `USA` → `Usa`, `U.S.A` → `U.s.a`). Since only a small number of records were affected, these were filtered and manually corrected back to `USA`, `UK`, etc.
 
-**Before Cleaning**
-Screenshot:
-![Before Correction](Cleaning/Screenshots/Country/short_country_names_issues.jpg)
+**View Screenshots:**
 
-**After Cleaning**
-Screenshot:
-![After Correction](Cleaning/Screenshots/Country/short_country_name_issues_fixed.jpg)
+- [Before Correction](Cleaning/Screenshots/Country/short_country_names_issues.jpg)
+- [After Correction](Cleaning/Screenshots/Country/short_country_name_issues_fixed.jpg)
 
 ---
 
-##### Handling Missing Country Values 
+**Handling Missing Country Values** 
 Replaced blank country values with "Unknown" using Find & Replace.
 
-Screenshot:
-![Handling Missing Country](Cleaning/Screenshots/Country/missing_country_names_fixed.jpg)
+**View Screenshots:**
+
+[Handling Missing Country](Cleaning/Screenshots/Country/missing_country_names_fixed.jpg)
 
 ---
 
 #### Last_Purchase_Date and Total_Spent Columns Cleaning
 
-##### Date Column Standardization and Correction 
-The Date column contained inconsistent date formats and one incorrectly entered value that was entered as 15-02-2024 instead of 02-15-2024 (MM-DD-YYYY format).Five dates were in a different text-based format: 5-MAR-24.The column had mixed date formats, which could affect sorting and analysis.
+**Date Column Standardization and Correction** 
+The `Last_Purchase_Date` column had mixed formats: one value entered as `15-02-2024` instead of `02-15-2024` (MM-DD-YYYY), and five dates in a text format like `5-MAR-24`. The column was converted to a consistent date type, and the miskeyed date was corrected manually.
 
-The entire Date column data type was converted to the standard MM-DD-YYYY format to ensure consistency.
+**View Screenshots:**
 
-The incorrectly entered date (15-02-2024) was manually corrected to 02-15-2024.
-
-The text-formatted dates (e.g., 5-MAR-24) were automatically standardized after converting the column to proper date format.
-
-All dates are now consistent in MM-DD-YYYY format.
-
-The column is properly recognized as a Date data type.
-
-**Before Cleaning**
-Screenshot:
-![Before Cleaning](Cleaning/Screenshots/Date/date_issues.jpg)
-
-**During Cleaning**
-Screenshot:
-![During Cleaning](Cleaning/Screenshots/Date/date_issues_fixing.jpg)
-
-**After Cleaning**
-Screenshot:
-![After Cleaning](Cleaning/Screenshots/Date/date_issue_fixed.jpg)
+- [Before Cleaning](Cleaning/Screenshots/Date/date_issues.jpg)
+- [During Cleaning](Cleaning/Screenshots/Date/date_issues_fixing.jpg)
+- [After Cleaning](Cleaning/Screenshots/Date/date_issue_fixed.jpg)
 
 ---
 
-##### Standardizing Currency Values and Replacing Invalid Data from Total_Spent 
+**Standardizing Currency Values and Replacing Invalid Data from Total_Spent** 
 Removed $ symbols from Total Spent values, Converting invalid entries such as: N/A,NULL,#VALUE to blank values by using the formula
 
 **Formula:**
@@ -334,8 +318,9 @@ Removed $ symbols from Total Spent values, Converting invalid entries such as: N
 =IFERROR(IF(OR(F6="N/A",F6="NULL"),"",VALUE(F6)),"")
 ````
 
-Screenshot:
-![Standardizing_Currency_Values_and_Replacing_Invalid_Data](Cleaning/Screenshots/Spent/total_spent_issue_1_fix.jpg)
+**View Screenshots:**
+
+[Standardizing_Currency_Values_and_Replacing_Invalid_Data](Cleaning/Screenshots/Spent/total_spent_issue_1_fix.jpg)
 
 Checks if G2 equals "N/A", "null”
 
@@ -343,13 +328,12 @@ If true => returns empty ""
 
 Otherwise => converts G2 to a number using VALUE(G2)
 
-If any error happens => returns ""
+If any error happens => returns blank cell
 
 ---
 
-#####  Handling Missing Values
+**Flagging Missing Last_Purchase_Date**
 
-###### Flagging Missing Last_Purchase_Date 
 Created a Data_Issue_Flag column that flags missing values in Last_Purchase_Date as "Missing_Purchase_Date" using formula 
 
 **Formula:**
@@ -371,12 +355,14 @@ If the AND condition is TRUE => returns "Missing_Purchase_Date"
 
 If FALSE => returns "OK"
 
-Screenshot:
-![Flagging_Missing_Dates](Cleaning/Screenshots/Date/date_missing_fixed.jpg)
+**View Screenshots:**
+
+[Flagging_Missing_Dates](Cleaning/Screenshots/Date/date_missing_fixed.jpg)
 
 ---
 
-###### Flagging Missing Total_Spent 
+**Flagging Missing Total_Spent**
+
 Created a Data_Quality_Flag column that flags missing values in Total_Spent as "Missing_Total_Spent" using formula 
 
 **Formula:**
@@ -394,46 +380,49 @@ IF(..., "Missing_Total_Spent", "OK")
 
 If both conditions are TRUE => returns "Missing_Total_Spent", Otherwise => returns "OK"
 
-Screenshot:
-![Flagging_Missing_Spent](Cleaning/Screenshots/Spent/total_spent_issue_2_fix.jpg)
+**View Screenshots:**
+
+[Flagging_Missing_Spent](Cleaning/Screenshots/Spent/total_spent_issue_2_fix.jpg)
 
 ---
 
 ## Cleaned Dataset Description 
-After completing the data cleaning process in Excel, the Clean Data set consists of 175 tows including header.The dataset is now standardized, consistent, and analysis-ready.The following improvements were achieved:
+After cleaning, the dataset has **175 rows** (including header), standardized and analysis-ready:
+ 
+- Removed extra spaces and standardized casing in `Customer_Name`
+- Cleaned and validated `Email` entries
+- Standardized capitalization and corrected abbreviations in `Country`
+- Converted `Last_Purchase_Date` into a consistent date format
+- Removed currency symbols and invalid text from `Total_Spent`
+Two new columns were added for data quality monitoring:
+- `Date_Issue_Flag` — flags missing `Last_Purchase_Date`
+- `Data_Quality_Flag` — flags missing `Total_Spent`
+**Note:** 4 customers with no purchases were flagged as missing due to `N/A`, `NULL`, and `#VALUE` entries in the raw `Total_Spent` column.
 
-- Removed extra spaces and standardized casing in the Customer_Name.
-- Cleaned and validated Email entries by fixing formatting errors, removing invalid characters, and handling missing values.
-- Standardized capitalization and corrected abbreviated names in the Country.
-- Converted the Last_Purchase_Date column into a consistent date format and resolved incorrect or missing entries.
-- Removed currency symbols from Total_Spent, replaced invalid text values (N/A, NULL, Error), and handled missing data appropriately.
-
-Additionally, two new columns were created to improve data quality monitoring:
-
-- Date_Issue_Flag – Flags records where the Last_Purchase_Date value was missing.
-- Data_Quality_Flag – Flags records where the Total_Spent value was missing.
-
-The cleaned dataset is structured, validated, and ready for further analysis, reporting, or visualization.
-
----
-
-### Note 
-The four customers with no purchases were flagged as missing in cleaned data set due to N/A, NULL and #VALUE Total Spent entries in the raw dataset. 
-
----
-
-**Clean Data from row 1 to 43**
-Screenshot:
-![clean_1_43](Data/Cleaned/clean_1.jpg)
-
-**Clean Data from row 44 to 75**
-Screenshot
-![clean_44_75](Data/Cleaned/clean_2.jpg)
+**Cleaned data preview:**
+ 
+| Rows | Screenshot |
+|---|---|
+| 1–43 | [View](Data/Cleaned/clean_1.jpg)
+| 44–75 | [View](Data/Cleaned/clean_2.jpg)
 
 ---
 
 ## Analysis 
 After cleaning, the dataset was analyzed to answer the following business questions
+
+### Business Questions & Formulas
+ 
+| # | Question | Formula | Result |
+|---|---|---|---|
+| 1 | Total unique customers | `=COUNTA(Clean!B2:B175)` | _fill in_ |
+| 2 | Customers with zero purchases | `=COUNTBLANK(Clean!G2:G175)` | _fill in_ |
+| 3 | % of customers with no purchase | `= COUNTIF(Clean!G2:G175,"")/COUNTA(Clean2!B2:B175)` | _fill in_ |
+| 4 | Overall total spending | `=SUM(Clean!G:G)` | _fill in_ |
+| 5 | Average spend per customer | `=AVERAGE(Clean!G2:G175)` | _fill in_ |
+| 6 | Top revenue-generating country | `= INDEX('Supporting Table 1'!B4:B115,MATCH(MAX('Supporting Table 1'!C4:C115),'Supporting Table 1'!C4:C115,0))` | _fill in_ |
+
+*`'Supporting Table 1'` is a helper table listing each country alongside its total spend, built to make the INDEX/MATCH lookup possible.*
 
 ### What is the total number of unique customers?
 
@@ -539,34 +528,22 @@ Calculated total spending distribution by country using formula
 ```excel
 = SUMIF(Clean!D:D,B4,Clean!G:G)
 ````
+Sums `Total_Spent` (column G) for rows where `Country` (column D) matches the criterion in `B4`.
 
-Screenshot:
+**View Screenshot:**
 
-![spending_distribution_by_country ](Analysis/Screenshots/spend_by_country.jpg)
-
-Clean!D:D => The range containing the criteria values.
-
-B4 => The specific criterion.
-
-Clean!G:G => The range containing the values to be summed.
-
-This formula calculates the total spending distributed by country in column G from the Clean sheet where the corresponding entries in column D match the criterion specified in cell B4.
+[spending_distribution_by_country ](Analysis/Screenshots/spend_by_country.jpg)
 
 ---
 
 ### Which 25 countries contribute the highest total spending?
 
-Showed top 25 countries by total spending using number filtering the Supporting Table 1
+Filtered the supporting table using **Filter → Number Filter → Top 25**.
 
-Filter => Number filter => Top 25
-
-**Filtering Top 25 Countries By Total Spending**
-Screenshot:
-![filtering_spending_distribution_by_country_25 ](Analysis/Screenshots/purchase_distribution_by_country_top_25_1.jpg)
-
-**Top 25 Countries By Total Spending**
-Screenshot:
-![spending_distribution_by_country_25](Analysis/Screenshots/purchase_distribution_by_country_top_25_2.jpg)
+**View Screenshots:**
+ 
+- [Filtering top 25](Analysis/Screenshots/purchase_distribution_by_country_top_25_1.jpg)
+- [Top 25 result](Analysis/Screenshots/purchase_distribution_by_country_top_25_2.jpg)
 
 ---
 
@@ -576,46 +553,46 @@ Analysis Screenshot:
 ---
 
 ### Insights Generated
-- 2.3% of Customers (4 Customers) have no purchases, highlighting minor data quality issues in the raw dataset. These entries were flagged as missing in the cleaned dataset to ensure accurate calculations in analysis.
-- While the top country generates $71,500 in total spending, the combined spending of other countries is significantly higher at around $1,447,800, showing that overall revenue is largely driven by multiple markets rather than a single country.
-- The USA has the highest total spent, but the other top countries also contribute meaningfully , supporting overall revenue growth.
+- **2.3% of customers (4 customers)** have no purchases, highlighting minor data quality issues in the raw dataset — flagged in the cleaned dataset to keep calculations accurate
+- The top country generates **$71,500** in total spending, while the combined spending of all other countries is significantly higher at **~$1,447,800** — revenue is driven by many markets, not one
+- The **USA** has the highest total spend, but other top countries also contribute meaningfully to overall revenue
 
+---
+
+## 💡 Recommendations
+ 
+1. **Follow up with the 4 flagged no-purchase customers** to understand why — is it a data entry issue, or did they genuinely never convert?
+2. **Don't over-index on the top country** — since revenue is spread across many markets rather than concentrated in one, retention efforts should stay broad rather than assuming the top country alone drives growth
+3. **Investigate the top 25 countries individually** to see if there's a natural tier (e.g. top 5 vs the rest) that deserves different marketing treatment
 ---
 
 ## 📊 Dashboard Creation: An excel dashboard was created to summarize insights visually.
 
-The dashboard includes:
-- KPIs
-- Charts
-- Chart level Insights
-
----
-
-### Key Performance Indicators (KPIs) 
-The following KPIs were displayed at the top of the dashboard to summarize overall performance:
-- Total Customers 
-- Number of Customers having  Purchase 
-- Number of Customers having no Purchase
-- Total Purchase 
+An Excel dashboard was created to summarize insights visually.
+ 
+**KPIs displayed:**
+- Total Customers
+- Number of Customers with a Purchase
+- Number of Customers with No Purchase
+- Total Purchase
 - Top Country by Spending
-
----
-
-### Charts
-
-#### 1. Customer Distribution 
-This chart presents the percentage distribution of customers based on their purchase behavior — those who made at least one purchase versus those who made none.
-
-#### 2. Total Spending_Top Country vs. Other Countries 
-This chart compares the total spending by the highest-performing country against the combined spending of all other countries.
-
-#### 3. Total Spending Distribution by Country (Top 25) 
-This chart visualizes and compares the total number of purchases made across the top 25 countries ranked by purchase volume.
-
----
+**Charts:**
+ 
+| Chart | Purpose |
+|---|---|
+| Customer Distribution | % of customers who purchased vs. made no purchase |
+| Total Spending — Top Country vs. Other Countries | Compares the top-performing country's spend against the combined total of all others |
+| Total Spending Distribution by Country (Top 25) | Compares total spend across the top 25 countries |
 
 Dashboard Screenshot:
 ![Dashboard](Dashboard/Dashboard_Screenshot/dashboard.png)
+
+---
+
+## 👤 Author
+ 
+**Yasir Shah** — Data Analyst | Excel | SQL | Power BI
+
 
 ---
 
