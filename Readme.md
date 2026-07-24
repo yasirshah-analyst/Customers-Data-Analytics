@@ -5,11 +5,20 @@ This project is a customer analytics project that includes data cleaning, purcha
 
 ---
 
+## 🎯 Business Problem
+ 
+*(Simulated scenario — the dataset is synthetic, generated for portfolio purposes, but the project is framed the way a real stakeholder request would be.)*
+ 
+A business wants to understand its customer base: how many customers are actively purchasing, how much total revenue is being generated, and which markets (countries) are driving the most spending. Before any of that can be answered, the raw customer data has quality issues — inconsistent formatting, missing values, duplicates — that need to be resolved first.
+
+---
+
 ## Project Objectives
-- Clean and preprocess raw customer data  
-- Analyze customer data by country and total amount spent.
-- Calculate KPIs 
-- Create dashboard visualizations  
+1. Clean and standardize raw customer data using Excel formulas and tools
+2. Calculate core KPIs (total customers, total spend, average spend, top country)
+3. Analyze purchase distribution by country
+4. Build a dashboard to visualize the results
+5. Translate the findings into insights and recommendations
 
 ---
 
@@ -123,15 +132,12 @@ This project focuses on cleaning and preparing raw data set using Excel.The raw 
 
 ---
 
-**Raw Data from row 1 to 49**
-Screenshot:
-![1_to_49_Raw](Data/Raw/raw_1.jpg)
-
-**Raw Data from row 50 to 80**
-
-Screenshot:
-
-![50_to_80_Raw](Data/Raw/raw_2.jpg)
+**Raw data preview:**
+ 
+| Rows | Screenshot |
+|---|---|
+| 1–49 | [View](Data/Raw/raw_1.jpg)
+| 50–80 | [View](Data/Raw/raw_2.jpg)
 
 ---
 
