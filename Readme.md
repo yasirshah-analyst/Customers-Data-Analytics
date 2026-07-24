@@ -67,6 +67,10 @@ Customer Data Cleaning & Purchase Analysis Dashboard/
 │       ├── Duplicate/
 │       │   └── duplicates_removed.jpg
 │       │
+│       │──── blank/
+│       │        ├── fixed_blank_rows.jpg
+│       │        └── fixing_blank_rows.jpg
+│       │
 │       ├── Email/
 │       │   ├── emailcom_fixed.jpg
 │       │   ├── ends_with_._fixed.jpg
@@ -76,10 +80,7 @@ Customer Data Cleaning & Purchase Analysis Dashboard/
 │       └── Spent/
 │           ├── total_spent_issue_1_fix.jpg
 │           ├── total_spent_issue_2_fix.jpg
-│           └── blank/
-│               ├── fixed_blank_rows.jpg
-│               └── fixing_blank_rows.jpg
-│
+│           
 ├── Analysis/
 │   ├── Analysis.jpg
 │   └── Screenshots/
@@ -134,7 +135,7 @@ This project focuses on cleaning and preparing raw data set using Excel.The raw 
 
 **Raw data preview:**
  
-| Rows | Screenshot |
+| Rows | Screenshots |
 |---|---|
 | 1–49 | [View](Data/Raw/raw_1.jpg)
 | 50–80 | [View](Data/Raw/raw_2.jpg)
@@ -156,7 +157,7 @@ Identified and removed 5 duplicate rows using Remove Duplicates.
 #### Removing Blank Rows 
 Removed 3 blank rows using Filter.
 
-**View Screenshot:**
+**View Screenshots:**
  
 - Before: [Blank rows present](Cleaning/Screenshots/blank/fixing_blank_rows.jpg)
 - After: [Blank rows removed](Cleaning/Screenshots/blank/fixed_blank_rows.jpg)
@@ -233,7 +234,7 @@ If true, it appends "com" to the end of the email address.
 
 If false, it leaves the original value unchanged.
 
-**View Screenshots:**
+**View Screenshot:**
 
 [Fixing Missing "com"](Cleaning/Screenshots/Email/ends_with_._fixed.jpg)
 
@@ -255,7 +256,7 @@ Otherwise, it keeps the existing email address.
 
 This step ensured that missing values were clearly identified instead of being left blank.
 
-**View Screenshots:**
+**View Screenshot:**
 
 [Handling Missing Email](Cleaning/Screenshots/Email/no_email_fixed.jpg)
 
@@ -271,7 +272,7 @@ The Country column contained inconsistent capitalization. To standardize the ful
 =PROPER(D2)
 ````
 
-**View Screenshots:**
+**View Screenshot:**
 
 [Fixing casing issues](Cleaning/Screenshots/Country/fixing_case_issues_in_country.jpg)
 
@@ -291,7 +292,7 @@ The Country column contained inconsistent capitalization. To standardize the ful
 **Handling Missing Country Values** 
 Replaced blank country values with "Unknown" using Find & Replace.
 
-**View Screenshots:**
+**View Screenshot:**
 
 [Handling Missing Country](Cleaning/Screenshots/Country/missing_country_names_fixed.jpg)
 
@@ -354,7 +355,7 @@ If the AND condition is TRUE => returns "Missing_Purchase_Date"
 
 If FALSE => returns "OK"
 
-**View Screenshots:**
+**View Screenshot:**
 
 [Flagging_Missing_Dates](Cleaning/Screenshots/Date/date_missing_fixed.jpg)
 
@@ -379,7 +380,7 @@ IF(..., "Missing_Total_Spent", "OK")
 
 If both conditions are TRUE => returns "Missing_Total_Spent", Otherwise => returns "OK"
 
-**View Screenshots:**
+**View Screenshot:**
 
 [Flagging_Missing_Spent](Cleaning/Screenshots/Spent/total_spent_issue_2_fix.jpg)
 
