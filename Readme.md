@@ -147,9 +147,11 @@ The following cleaning steps are performed to clean the above raw data set to en
 #### Removing Duplicate Rows 
 Identified and removed 5 duplicate rows using Remove Duplicates.
 
-📸 **Screenshot:**
- 
+<details>
+<summary>Screenshot</summary>
 [Duplicate Removal](Cleaning/Screenshots/Duplicate/duplicates_removed.jpg)
+
+</details>
 
 ---
 
