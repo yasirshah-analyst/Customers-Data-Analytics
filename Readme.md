@@ -317,11 +317,6 @@ Removed $ symbols from Total Spent values, Converting invalid entries such as: N
 ```excel
 =IFERROR(IF(OR(F6="N/A",F6="NULL"),"",VALUE(F6)),"")
 ````
-
-**View Screenshots:**
-
-[Standardizing_Currency_Values_and_Replacing_Invalid_Data](Cleaning/Screenshots/Spent/total_spent_issue_1_fix.jpg)
-
 Checks if G2 equals "N/A", "null”
 
 If true => returns empty ""
@@ -329,6 +324,10 @@ If true => returns empty ""
 Otherwise => converts G2 to a number using VALUE(G2)
 
 If any error happens => returns blank cell
+
+**View Screenshot:**
+
+[Standardizing_Currency_Values_and_Replacing_Invalid_Data](Cleaning/Screenshots/Spent/total_spent_issue_1_fix.jpg)
 
 ---
 
