@@ -171,12 +171,12 @@ Fixed inconsistent text casing and removed extra leading spaces in the Customer_
 =PROPER(TRIM(B2))
 ````
 
-Used TRIM() to eliminate unnecessary leading and trailing spaces.
+- `TRIM()` removes unnecessary leading/trailing spaces
+- `PROPER()` capitalizes the first letter of each word
 
-Applied PROPER() to standardize text formatting by capitalizing the first letter of each word in customer names.
-
-Screenshot:
-![Standardizing Text](Cleaning/Screenshots/Customer_Name/fixing_case_issue_and_extra_spaces_in_cust-name.jpg)
+**View Screenshot:**
+ 
+[Standardizing Text](Cleaning/Screenshots/Customer_Name/fixing_case_issue_and_extra_spaces_in_cust-name.jpg)
 
 ---
 
