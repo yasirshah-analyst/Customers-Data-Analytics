@@ -149,8 +149,8 @@ Identified and removed 5 duplicate rows using Remove Duplicates.
 
 <details>
 <summary>Screenshot</summary>
-[Duplicate Removal](Cleaning/Screenshots/Duplicate/duplicates_removed.jpg)
-
+<a href="Cleaning/Screenshots/Duplicate/duplicates_removed.jpg">Duplicate Removal</a>
+ 
 </details>
 
 ---
