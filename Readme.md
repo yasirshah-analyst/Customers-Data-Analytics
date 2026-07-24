@@ -211,9 +211,9 @@ Replaced "@.com" with "@email.com".
 These corrections ensured that domain names followed a valid and consistent structure.
 
 **View Screenshots:**
-[Fixing "emailcom"](Cleaning/Screenshots/Email/emailcom_fixed.jpg)
 
-[Fixing "@.com"](Cleaning/Screenshots/Email/fixing_@.com.jpg)
+- [Fixing "emailcom"](Cleaning/Screenshots/Email/emailcom_fixed.jpg)
+- [Fixing "@.com"](Cleaning/Screenshots/Email/fixing_@.com.jpg)
 
 ---
 
