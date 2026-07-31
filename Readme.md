@@ -483,7 +483,8 @@ An Excel dashboard was created to summarize insights visually.
 | Total Spending — Top Country vs. Other Countries | Compares the top-performing country's spend against the combined total of all others |
 | Total Spending Distribution by Country (Top 25) | Compares total spend across the top 25 countries |
 
-Dashboard Screenshot:
+**View Screenshot**
+
 ![Dashboard](Dashboard/Dashboard_Screenshot/dashboard.png)
 
 ---
